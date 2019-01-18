@@ -1,0 +1,14 @@
+z_template_package
+raw_data
+^.*\.Rproj$
+^\.Rproj\.user$
+^README\.Rmd$
+^README-.*\.png$
+^Makefile$
+^cran-comments\.md$
+^appveyor\.yml$
+^revdep$
+^.*\.tar\.gz$
+^.*\.pdf$
+^\.travis.*$
+
