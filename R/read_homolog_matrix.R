@@ -4,7 +4,6 @@
 #'
 #' @param file Name of the homology matrix file
 #' @param ... Additional parameters from data.table::fread()
-#' @import data.table
 #' @inherit data.table::fread()
 #' @export
 read_homolog_matrix <- function(file, ...){

@@ -8,7 +8,9 @@ Authors@R: c(
     )
 Description: TODO
 Depends: 
-    R (>= 3.00),
+    R (>= 3.00)
+Imports:
+    data.table,
     ggplot2
 Suggests: 
     testthat,
