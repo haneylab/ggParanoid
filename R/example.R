@@ -4,7 +4,7 @@
 #'
 #' @param path Name of the file. If `NULL`, it will list all files in `extdata`.
 #' @export
-#' @example
+#' @examples
 #' # list all files
 #' ggParanoid_example()
 
