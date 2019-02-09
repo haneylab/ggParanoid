@@ -11,7 +11,8 @@ Depends:
     R (>= 3.00)
 Imports:
     data.table,
-    ggplot2
+    ggplot2,
+    R.utils
 Suggests: 
     testthat,
     covr,
