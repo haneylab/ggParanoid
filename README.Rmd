@@ -3,13 +3,13 @@ pkg_name <- desc::desc_get_field("Package","DESCRIPTION")
 pkg_name_code <- sprintf('`%s`',pkg_name)
 
 travis = list()
-travis$img <- sprintf('https://travis-ci.org/rethomics/%s.svg?branch=master',pkg_name)
-travis$url <- sprintf('https://travis-ci.org/rethomics/%s',pkg_name)
+travis$img <- sprintf('https://travis-ci.org/haneylab/%s.svg?branch=master',pkg_name)
+travis$url <- sprintf('https://travis-ci.org/haneylab/%s',pkg_name)
 travis$badge <- sprintf("[![Travis-CI Build Status](%s)](%s)", travis$img,travis$url)
 
 codecov = list()
-codecov$img <- sprintf('https://img.shields.io/codecov/c/github/rethomics/%s/master.svg',pkg_name)
-codecov$url <- sprintf('https://codecov.io/github/rethomics/%s?branch=master',pkg_name)
+codecov$img <- sprintf('https://img.shields.io/codecov/c/github/haneylab/%s/master.svg',pkg_name)
+codecov$url <- sprintf('https://codecov.io/github/haneylab/%s?branch=master',pkg_name)
 codecov$badge <- sprintf("[![Coverage Status](%s)](%s)", codecov$img,codecov$url)
 
 cran = list()
@@ -26,15 +26,15 @@ cran_log$badge <- sprintf("[![CRAN log](%s)](%s)", cran_log$img,cran_log$url)
 all_badges <- list(travis,codecov,cran,cran_log)
 
 all_badges <-paste(sapply(all_badges, function(l)l$badge), collapse = "")
-tutorial_url <- sprintf("https://rethomics.github.io/%s.html", pkg_name)
+#tutorial_url <- sprintf("https://re.github.io/%s.html", pkg_name)
 ```
 
 
 # `r pkg_name_code``r all_badges`
 
-`r pkg_name_code` is part of the [rethomics framework](https://rethomics.github.io/).
+`r pkg_name_code` is a tool for visualization of comparative genomics data from [PyParanoid](https://github.com/ryanmelnyk/PyParanoid).
 This README is a short explanation of the basics of `r pkg_name_code`.
-A comprehensive tutorial is available on the [rethomics webpage](`r tutorial_url`).
+A comprehensive tutorial may be provided.
 We also provide a [conventional pdf documentation](`r sprintf("%s.pdf", pkg_name)`).
 
 
@@ -42,5 +42,5 @@ We also provide a [conventional pdf documentation](`r sprintf("%s.pdf", pkg_name
 
 ```r
 library(devtools)
-install_github("rethomics/`r pkg_name`")
+install_github("haneylab/`r pkg_name`")
 ```
